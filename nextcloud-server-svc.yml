@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+namespace: nextcloud
+metadata:
+  name: nextcloud-server
+  labels:
+    app: nextcloud
+spec:
+  selector:
+    pod-label: nextcloud-server-pod 
+  ports:
+  - port: 80
+#    targetPort: <Target Port>
+    protocol: TCP

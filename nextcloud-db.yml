@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+namespace: nextcloud
 metadata:
   name: nextcloud-db
   labels:
